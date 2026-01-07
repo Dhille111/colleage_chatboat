@@ -1,92 +1,111 @@
-🎓 Narasaraopeta Engineering College – AI Chatbot
+# 🎓 Narasaraopeta Engineering College – AI Chatbot
 
-An AI-powered college information assistant built using Google Gemini API and Gradio, designed to provide accurate, real-time information about Narasaraopeta Engineering College by sourcing data directly from the official website.
+An AI-powered college information assistant built using **Google Gemini API** and **Gradio**, designed to provide accurate, student-friendly, and real-time information about **Narasaraopeta Engineering College** by sourcing data from the official college website.
 
-📌 Project Overview
+---
 
-The Narasaraopeta Engineering College AI Chatbot acts as a virtual helpdesk for students, parents, and visitors.
-It answers college-related queries such as:
+## 📌 Project Overview
 
-Admissions information
+This project implements a **virtual college helpdesk chatbot** that answers queries related to Narasaraopeta Engineering College, such as admissions, courses, departments, campus facilities, and general FAQs.
 
-Courses and departments
+The chatbot is designed to behave like an **official college support assistant**, ensuring responses are:
+- Professional
+- Clear
+- Concise
+- Reliable
 
-Academic schedules
+---
 
-Campus facilities
+## 🎯 Objectives
 
-General college-related FAQs
+- Provide quick access to college-related information
+- Reduce manual effort in handling student queries
+- Demonstrate real-world usage of Generative AI
+- Build an industry-style AI application for academic and internship purposes
 
-The chatbot uses Google Gemini (Generative AI) combined with Google Search Tool to ensure reliable and up-to-date responses.
+---
 
-🚀 Key Features
+## 🚀 Key Features
 
-🤖 AI-Powered Responses using Gemini 2.5 Flash Lite
+- 🤖 AI-powered responses using Google Gemini
+- 🔍 Real-time information retrieval via Google Search Tool
+- 🏫 Official helpdesk-style responses
+- ⚡ Lightweight and fast Gradio interface
+- 🧑‍🎓 Student-friendly and easy-to-use
+- 🌐 Domain-focused responses (college website)
 
-🔍 Real-time Web Search Integration (College website only)
+---
 
-🏫 Official College Helpdesk Tone
+## 🛠️ Tech Stack
 
-⚡ Fast and Lightweight UI with Gradio
+- **Programming Language:** Python  
+- **AI Model:** Google Gemini 2.5 Flash Lite  
+- **Web Search Tool:** Google Search (Gemini Tooling)  
+- **Frontend UI:** Gradio  
+- **API Integration:** Google Generative AI SDK  
 
-🛡️ Controlled Domain Search (nrtec.in)
+---
 
-🧑‍🎓 Student-Friendly & Accurate Answers
+## 🧠 System Architecture
 
-🛠️ Tech Stack
-Technology	Purpose
-Python	Backend logic
-Google Gemini API	AI response generation
-Google Search Tool	Real-time information retrieval
-Gradio	Web-based user interface
-LLM Prompt Engineering	Professional response control
-🧠 System Architecture
+1. User enters a query through the chatbot interface  
+2. Query is sent to the Gemini LLM  
+3. Gemini uses Google Search Tool to fetch relevant information  
+4. System instructions guide response style and accuracy  
+5. Final response is displayed to the user  
 
-User enters a query in the chatbot UI
+---
 
-Query is sent to the Gemini LLM
-
-Gemini uses Google Search Tool to fetch data
-
-Responses are filtered using system instructions
-
-Final answer is displayed to the user
-
-📂 Project Structure
+## 📂 Project Structure
+---
 college-chatbot/
 │
-├── app.py               # Main application file
-├── README.md            # Project documentation
-├── requirements.txt     # Python dependencies
-└── assets/              # (Optional) screenshots or logos
+├── app.py # Main application file
+├── README.md # Project documentation
+├── requirements.txt # Python dependencies
+└── notebooks/
+└── college_chatbot_notebook.ipynb
 
-⚙️ Installation & Setup
-1️⃣ Clone the Repository
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/your-username/college-chatbot.git
 cd college-chatbot
 
-2️⃣ Create Virtual Environment (Recommended)
+2️⃣ Create a Virtual Environment (Recommended)
 python -m venv venv
-source venv/bin/activate      # For Linux/Mac
-venv\Scripts\activate         # For Windows
+
+Windows
+venv\Scripts\activate
+
+Linux / Mac
+source venv/bin/activate
 
 3️⃣ Install Dependencies
 pip install -r requirements.txt
 
-🔑 Environment Configuration
+🔑 API Key Configuration
 
-Create a .env file (recommended) and add:
+⚠️ Important: Never expose your API key publicly.
 
-GEMINI_API_KEY=your_api_key_here
+Option 1 (Recommended – Environment Variable):
+
+set GEMINI_API_KEY=your_api_key_here   # Windows
+export GEMINI_API_KEY=your_api_key_here # Linux/Mac
 
 
-⚠️ Never expose your API key in public repositories
+Option 2 (Direct – For Learning Purpose Only):
 
-▶️ Run the Application
+client = genai.Client(api_key="YOUR_API_KEY")
+
+▶️ How to Run the Application
 python app.py
 
 
-The chatbot will be available at:
+After running, open your browser and visit:
 
 http://localhost:7860
 
@@ -98,57 +117,68 @@ http://localhost:7860
 
 “Where is the college located?”
 
-“Does the college have hostel facilities?”
+“Does the college provide hostel facilities?”
 
 📈 Use Cases
 
-College websites
+College helpdesk automation
 
-Student helpdesks
+Student admission support
 
-Admission support systems
+Academic project demonstration
+
+Internship and portfolio projects
 
 AI-powered institutional assistants
 
-Internship & academic projects
+🔐 Security & Reliability
 
-🔐 Security Considerations
+API keys should be stored securely
 
-API keys should be stored in environment variables
+System instructions reduce hallucinations
 
-Domain-restricted search ensures data authenticity
+Domain-focused search improves authenticity
 
-System instruction prevents hallucinations
+No user data is stored
 
-🏆 Future Enhancements
+🔮 Future Enhancements
 
-🔐 User authentication
+Multi-language support
 
-💬 Conversation history
+Conversation history
 
-📊 Analytics dashboard
+Authentication system
 
-🧾 PDF document ingestion
+PDF/Document ingestion (RAG)
 
-🌐 Multi-language support
+Analytics dashboard for query tracking
 
-👨‍🎓 Developed By
+👨‍🎓 Author
 
 Kotilingala Dhille Rao
-3rd Year B.Tech – AIML
+3rd Year B.Tech – Artificial Intelligence & Machine Learning
 Graduating in 2027
 
 📄 License
 
-This project is developed for educational and academic purposes.
-All college information belongs to Narasaraopeta Engineering College.
+This project is developed for educational and academic purposes only.
+All institutional information belongs to Narasaraopeta Engineering College.
 
 ⭐ Final Note
 
-This project demonstrates real-world AI integration, prompt engineering, and production-style application design, making it suitable for:
+This project follows industry-level documentation standards and demonstrates:
 
-Internships
+Real-world AI integration
 
-Final-year projects
+Prompt engineering
 
-Resume & GitHub portfolio
+API usage
+
+Clean project structuring
+
+
+
+
+
+
+
