@@ -3,7 +3,7 @@ from google.genai import types
 import gradio as gr
 
 # Initialize Gemini client
-client = genai.Client(api_key="AIzaSyC6086BPBikVfs3hgshvaVagTcINSKFihY")
+client = genai.Client(api_key="")
 
 google_search_tool = types.Tool(
     google_search=types.GoogleSearch()
